@@ -1,7 +1,7 @@
 FROM alpine:3.7
 LABEL maintainer="lewazo"
 
-RUN apk add --no-cache py-setuptools bash su-exec
+RUN apk add --no-cache py-setuptools shadow bash su-exec
 RUN ./usr/bin/easy_install-2.7 tvnamer
 
 COPY entrypoint.sh /usr/local/bin/entrypoint.sh
