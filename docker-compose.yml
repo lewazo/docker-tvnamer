@@ -1,0 +1,10 @@
+tvnamer:
+  image: lewazo/tvnamer
+  volumes:
+    - /media/tv:/tv
+    - /appdata/tvnamer:/config
+  environment:
+    - PUID=6577
+    - PGID=6577
+  command: /bin/bash
+
